@@ -65,3 +65,17 @@ document.querySelectorAll('.work-card').forEach((card) => {
     card.style.setProperty('--y', `${e.clientY - r.top}px`);
   });
 });
+
+// Scroll progress + active nav link
+const progress = document.querySelector('.progress');
+const navAnchors = [...document.querySelectorAll('.nav-links a[href^="#"]:not(.nav-cta)')];
+const sections = navAnchors.map((a) => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+const onScroll = () => {
+  const max = document.documentElement.scrollHeight - innerHeight;
+  if (progress) progress.style.setProperty('--p', max > 0 ? scrollY / max : 0);
+  let current = null;
+  sections.forEach((sec) => { if (sec.getBoundingClientRect().top < innerHeight * 0.35) current = sec.id; });
+  navAnchors.forEach((a) => a.classList.toggle('active', a.getAttribute('href') === `#${current}`));
+};
+addEventListener('scroll', onScroll, { passive: true });
+onScroll();
