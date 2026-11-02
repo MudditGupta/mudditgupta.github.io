@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/styles.css?v=3">
 </head>
 <body>
   <!-- Shared icon set -->
@@ -33,22 +33,24 @@
       <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M6 17v-5M11 17V6M16 17v-8M21 17v-3"/></symbol>
       <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a5 5 0 1 1 1.1-9.9A6 6 0 0 1 19.6 10 4 4 0 0 1 18 18z"/></symbol>
       <symbol id="i-branch" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="7" r="2"/><path d="M6 7v10M18 9c0 5-7 3.5-11 8.5"/></symbol>
+      <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M5 15c-1.5 1.3-2 4-2 6 2 0 4.7-.5 6-2"/><path d="M9 15l-3-3c1.5-4 5-9 13-9 0 8-5 11.5-9 13z"/><circle cx="15" cy="9" r="1.5"/></symbol>
+      <symbol id="i-sprint" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/><path d="M12 8v4l3 2"/></symbol>
+      <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></symbol>
+      <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></symbol>
       <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
       <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
       <symbol id="i-in" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></symbol>
     </defs>
   </svg>
 
-  <div class="bg-grid" aria-hidden="true"></div>
-  <div class="glow glow-a" aria-hidden="true"></div>
-  <div class="glow glow-b" aria-hidden="true"></div>
+  <div class="bg-layer" aria-hidden="true"><div class="bg-grid"></div><div class="glow glow-a"></div><div class="glow glow-b"></div></div>
 
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="#top" aria-label="Muddit Gupta home"><span class="brand-mark">M</span>Muddit Gupta</a>
       <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="#work">Experience</a><a href="#approach">Approach</a><a href="#toolkit">Toolkit</a><a href="#about">About</a>
+        <a href="#work">Experience</a><a href="#teams">Who I help</a><a href="#approach">Approach</a><a href="#toolkit">Toolkit</a><a href="#about">About</a>
         <a class="nav-cta" href="#contact">Let's talk <svg class="ic"><use href="#i-arrow"/></svg></a>
       </nav>
     </div>
@@ -109,6 +111,21 @@
         <div><strong>06</strong><small>Domains of experience</small></div>
         <div><strong>03</strong><small>Ways of contributing — analysis, delivery, QA</small></div>
         <div><strong>01</strong><small>Focus: meaningful outcomes</small></div>
+      </div>
+    </section>
+
+
+    <!-- WHO I WORK WITH -->
+    <section class="section container teams-section" id="teams">
+      <div class="section-heading reveal">
+        <div><div class="eyebrow">Who I work with</div><h2>The analyst in the middle of <span class="grad">every team that ships.</span></h2></div>
+        <p>Products don't move because of one function. I plug in wherever clarity is missing — between founders, builders, growth and the market.</p>
+      </div>
+      <div class="teams-grid">
+        <div class="team-card reveal"><span class="card-icon"><svg class="ic"><use href="#i-rocket"/></svg></span><h3>Founders &amp; early-stage startups</h3><p>Turn an idea into a scoped MVP — what to build first, what to skip, and how to explain it to developers.</p><div class="chips"><span>MVP scoping</span><span>PRDs</span><span>Roadmaps</span></div></div>
+        <div class="team-card reveal"><span class="card-icon"><svg class="ic"><use href="#i-sprint"/></svg></span><h3>Agile delivery teams</h3><p>Keep sprints moving with clear stories, groomed backlogs, quick answers for engineering and solid UAT before release.</p><div class="chips"><span>Scrum</span><span>Backlog</span><span>UAT</span></div></div>
+        <div class="team-card reveal"><span class="card-icon"><svg class="ic"><use href="#i-trend"/></svg></span><h3>Growth, SEO &amp; GTM engineers</h3><p>Define the funnels, tracking, landing-page requirements and data a go-to-market team needs to launch and measure.</p><div class="chips"><span>Funnels</span><span>Tracking specs</span><span>Launch plans</span></div></div>
+        <div class="team-card reveal"><span class="card-icon"><svg class="ic"><use href="#i-compass"/></svg></span><h3>Product &amp; market research</h3><p>Competitor teardowns, market sizing, user interviews and opportunity framing — so decisions rest on evidence, not opinion.</p><div class="chips"><span>Competitor analysis</span><span>User research</span><span>Market sizing</span></div></div>
       </div>
     </section>
 
@@ -197,9 +214,10 @@
         <p>Enough technical depth to work closely with engineering, data and QA teams — and enough business focus to keep the outcome in view.</p>
       </div>
       <div class="toolkit-grid">
-        <div class="tool-group reveal"><span class="card-icon"><svg class="ic"><use href="#i-layers"/></svg></span><h3>Business &amp; product</h3><div class="chips"><span>Discovery</span><span>BRD / PRD / SRS</span><span>User stories</span><span>Acceptance criteria</span><span>Backlog</span><span>Process mapping</span><span>Agile</span></div></div>
+        <div class="tool-group reveal"><span class="card-icon"><svg class="ic"><use href="#i-layers"/></svg></span><h3>Business &amp; product</h3><div class="chips"><span>Discovery</span><span>BRD / PRD / SRS</span><span>User stories</span><span>Acceptance criteria</span><span>Backlog</span><span>Process mapping</span><span>Agile / Scrum</span></div></div>
         <div class="tool-group reveal"><span class="card-icon"><svg class="ic"><use href="#i-chart"/></svg></span><h3>Data &amp; analytics</h3><div class="chips"><span>SQL</span><span>Python</span><span>PySpark</span><span>Pandas</span><span>Power BI</span><span>Excel</span><span>ETL</span></div></div>
         <div class="tool-group reveal"><span class="card-icon"><svg class="ic"><use href="#i-cloud"/></svg></span><h3>Platforms &amp; cloud</h3><div class="chips"><span>AWS Glue</span><span>S3</span><span>Lambda</span><span>Redshift</span><span>Athena</span><span>DynamoDB</span><span>Databricks</span></div></div>
+        <div class="tool-group reveal"><span class="card-icon"><svg class="ic"><use href="#i-compass"/></svg></span><h3>Research &amp; GTM</h3><div class="chips"><span>Market research</span><span>Competitor analysis</span><span>User interviews</span><span>Positioning</span><span>SEO requirements</span><span>Funnel &amp; event tracking</span><span>Launch planning</span></div></div>
         <div class="tool-group reveal"><span class="card-icon"><svg class="ic"><use href="#i-branch"/></svg></span><h3>Quality &amp; delivery</h3><div class="chips"><span>QA / UAT</span><span>API workflows</span><span>JIRA</span><span>GitHub</span><span>CI/CD</span><span>Release coordination</span><span>Defect triage</span></div></div>
       </div>
     </section>
@@ -222,7 +240,7 @@
         <div>
           <div class="eyebrow">Have a product challenge?</div>
           <h2>Let's make the <span class="grad">next step clearer.</span></h2>
-          <p>Open to Product Analyst, Business Analyst and Product Operations roles — with early-stage startups in India or product teams anywhere in the world. Full-time or project-based.</p>
+          <p>Open to Business Analyst, Product Analyst, Product Operations and product &amp; market research roles — with early-stage startups in India or product teams anywhere in the world. Full-time or project-based.</p>
         </div>
         <div class="contact-actions">
           <a class="button button-primary" id="email-link" href="mailto:muditgpt6@gmail.com"><svg class="ic"><use href="#i-mail"/></svg> Start a conversation</a>
@@ -238,6 +256,6 @@
     <span>© <span id="year">2026</span> Muddit Gupta · Product &amp; Business Analysis</span>
     <a href="#top">Back to top ↑</a>
   </footer>
-  <script src="/script.js"></script>
+  <script src="/script.js?v=3"></script>
 </body>
 </html>
