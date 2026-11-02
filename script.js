@@ -56,3 +56,12 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
 } else {
   document.querySelectorAll('.reveal').forEach((element) => element.classList.add('visible'));
 }
+
+// Soft spotlight that follows the cursor on experience cards
+document.querySelectorAll('.work-card').forEach((card) => {
+  card.addEventListener('pointermove', (e) => {
+    const r = card.getBoundingClientRect();
+    card.style.setProperty('--x', `${e.clientX - r.left}px`);
+    card.style.setProperty('--y', `${e.clientY - r.top}px`);
+  });
+});

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b1020">
+  <meta name="theme-color" content="#0a0f1d">
   <meta name="description" content="Muddit Gupta — Product Analyst and Business Analyst with four years of experience across product workflows, data, technical delivery and software quality.">
   <meta property="og:title" content="Muddit Gupta — Product & Business Analyst">
   <meta property="og:description" content="Connecting business needs with technology that works.">
@@ -12,70 +12,232 @@
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <!-- Shared icon set -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></symbol>
+      <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M3 12h4l2-5 4 10 2-5h6"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></symbol>
+      <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M8 18h7a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h7"/></symbol>
+      <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+      <symbol id="i-list" viewBox="0 0 24 24"><path d="M10 6h10M10 12h10M10 18h10"/><path d="m3 6 1.5 1.5L7 5M3 12l1.5 1.5L7 11M3 18l1.5 1.5L7 17"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.2c2.6.4 4.5 2.7 4.5 5.8"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M6 17v-5M11 17V6M16 17v-8M21 17v-3"/></symbol>
+      <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a5 5 0 1 1 1.1-9.9A6 6 0 0 1 19.6 10 4 4 0 0 1 18 18z"/></symbol>
+      <symbol id="i-branch" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="7" r="2"/><path d="M6 7v10M18 9c0 5-7 3.5-11 8.5"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+      <symbol id="i-in" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></symbol>
+    </defs>
+  </svg>
+
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="glow glow-a" aria-hidden="true"></div>
+  <div class="glow glow-b" aria-hidden="true"></div>
+
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Muddit Gupta home">MUDDIT<span>.</span></a>
+      <a class="brand" href="#top" aria-label="Muddit Gupta home"><span class="brand-mark">M</span>Muddit Gupta</a>
       <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="#work">Experience</a><a href="#approach">Approach</a><a href="#about">About</a><a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
+        <a href="#work">Experience</a><a href="#approach">Approach</a><a href="#toolkit">Toolkit</a><a href="#about">About</a>
+        <a class="nav-cta" href="#contact">Let's talk <svg class="ic"><use href="#i-arrow"/></svg></a>
       </nav>
     </div>
   </header>
 
   <main id="top">
+    <!-- HERO -->
     <section class="hero container">
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="status-dot"></span> PRODUCT ANALYST · BUSINESS ANALYST · PRODUCT DELIVERY</div>
-        <h1>Good products start with <span>better questions.</span></h1>
-        <p class="hero-lead">I connect business problems, user needs and technical teams—turning complex workflows into clear requirements, practical product decisions and delivery that can be tested.</p>
-        <div class="hero-meta"><span>04 years of professional experience</span><i></i><span>India · Open to international remote work</span></div>
-        <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span>↓</span></a><a class="text-link" href="#contact">Get in touch <span>↗</span></a></div>
+        <div class="pill"><span class="status-dot"></span>Available for remote roles &amp; projects</div>
+        <h1>Good products start with <span class="grad">better questions.</span></h1>
+        <p class="hero-lead">Product &amp; Business Analyst. I connect business problems, user needs and technical teams — turning complex workflows into clear requirements, practical product decisions and delivery that can be tested.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a class="button button-ghost" href="#contact">Get in touch</a>
+        </div>
+        <div class="hero-meta"><span>4 years in technology</span><i></i><span>Based in India</span><i></i><span>Open to international remote work</span></div>
       </div>
-      <div class="hero-visual reveal" aria-label="Product thinking illustration">
-        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-        <div class="orbit-core"><span class="core-mark">M<span>.</span></span><span class="core-caption">THINK · DEFINE · DELIVER</span></div>
-        <div class="float-card float-top"><span class="mini-icon">↗</span><div><b>Business clarity</b><small>Understand the why</small></div></div>
-        <div class="float-card float-bottom"><span class="mini-icon mint">⌘</span><div><b>Product execution</b><small>Make the how actionable</small></div></div>
-        <span class="visual-note">A bridge between business & technology</span>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="window">
+          <div class="window-bar"><span></span><span></span><span></span><em>product-requirements.md</em></div>
+          <div class="pipeline">
+            <div class="stage done"><b>01</b>Discover</div>
+            <div class="stage done"><b>02</b>Define</div>
+            <div class="stage active"><b>03</b>Build</div>
+            <div class="stage"><b>04</b>Validate</div>
+          </div>
+          <div class="story">
+            <div class="story-head"><span class="tag-mono">USER STORY</span><span class="prio">High priority</span></div>
+            <p>As a <b>new customer</b>, I want to <b>verify my identity in one flow</b>, so that I can start using the product the same day.</p>
+            <div class="criteria">
+              <div class="crit ok"><i></i>Document upload validates format &amp; size</div>
+              <div class="crit ok"><i></i>Failed checks show a clear next step</div>
+              <div class="crit"><i></i>Admin can review pending verifications</div>
+            </div>
+          </div>
+          <div class="mini-row">
+            <div class="mini">
+              <span class="tag-mono">SCOPE</span>
+              <div class="bars"><i style="--h:55%"></i><i style="--h:80%"></i><i style="--h:45%"></i><i style="--h:92%"></i><i style="--h:66%"></i><i style="--h:74%"></i></div>
+            </div>
+            <div class="mini">
+              <span class="tag-mono">FLOW</span>
+              <svg class="flow" viewBox="0 0 120 50"><rect x="2" y="17" width="26" height="16" rx="4"/><rect x="47" y="4" width="26" height="16" rx="4"/><rect x="47" y="30" width="26" height="16" rx="4"/><rect x="92" y="17" width="26" height="16" rx="4" class="hl"/><path d="M28 25h8l6-13h5M36 25l6 13h5M73 12h6l6 13h7M73 38h6l6-13"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="float-card float-top"><span class="mini-icon"><svg class="ic"><use href="#i-search"/></svg></span><div><b>Business clarity</b><small>Understand the why</small></div></div>
+        <div class="float-card float-bottom"><span class="mini-icon mint"><svg class="ic"><use href="#i-check"/></svg></span><div><b>Product execution</b><small>Make the how actionable</small></div></div>
       </div>
     </section>
 
-    <section class="proof-strip"><div class="container proof-grid"><div><strong>04<span>+</span></strong><small>Years in technology</small></div><div><strong>03</strong><small>Ways of contributing</small></div><div><strong>06</strong><small>Experience areas</small></div><div><strong>01</strong><small>Focus: meaningful outcomes</small></div></div></section>
+    <!-- PROOF -->
+    <section class="proof-strip">
+      <div class="container proof-grid">
+        <div><strong>04<span>+</span></strong><small>Years in technology</small></div>
+        <div><strong>06</strong><small>Domains of experience</small></div>
+        <div><strong>03</strong><small>Ways of contributing — analysis, delivery, QA</small></div>
+        <div><strong>01</strong><small>Focus: meaningful outcomes</small></div>
+      </div>
+    </section>
 
+    <!-- WORK -->
     <section class="section container" id="work">
-      <div class="section-heading reveal"><div><div class="eyebrow">SELECTED EXPERIENCE</div><h2>Work at the intersection<br>of <span>business & technology.</span></h2></div><p>These examples are anonymised. Each is labelled by the nature of the work, so hands-on delivery is not confused with team contribution, requirements or proposals.</p></div>
+      <div class="section-heading reveal">
+        <div><div class="eyebrow">Selected experience</div><h2>Work at the intersection of <span class="grad">business &amp; technology.</span></h2></div>
+        <p>Examples are anonymised and labelled by the nature of the work, so hands-on delivery is never confused with team contribution, requirements or proposals.</p>
+      </div>
       <div class="filter-row reveal" role="group" aria-label="Filter experience cards">
         <button class="filter active" data-filter="all">All work <span>06</span></button><button class="filter" data-filter="hands-on">Hands-on / technical</button><button class="filter" data-filter="team">Team contribution</button><button class="filter" data-filter="analysis">Requirements / analysis</button><button class="filter" data-filter="proposal">Proposals / concepts</button>
       </div>
       <div class="work-grid">
-        <article class="work-card reveal" data-kind="hands-on team"><div class="card-top"><span class="card-index">01 / DATA SYSTEMS</span><span class="kind-label">Technical delivery</span></div><h3>Enterprise data integration & migration</h3><p>Data movement and transformation across relational databases, NoSQL storage and cloud data services.</p><ul><li>Oracle-to-DynamoDB ingestion workflow</li><li>AWS Glue jobs consolidating DynamoDB tables</li><li>SSIS packages supporting Oracle-to-warehouse migration</li><li>SQL validation and ETL data processing</li></ul><div class="tags"><span>Oracle</span><span>DynamoDB</span><span>AWS Glue</span><span>SSIS</span><span>SQL</span></div><div class="card-foot"><span>Data engineering</span><span>↗</span></div></article>
-        <article class="work-card reveal" data-kind="team analysis"><div class="card-top"><span class="card-index">02 / HEALTHCARE SOFTWARE</span><span class="kind-label">Analysis + QA/UAT</span></div><h3>Patient & clinician workflows</h3><p>Contributed to analysis, documentation and validation of healthcare application functionality and operational workflows.</p><ul><li>Patient management and doctor-portal journeys</li><li>Authentication and role/access requirements</li><li>Treatment workflow functional requirements</li><li>SRS, functional specifications and workflow testing</li></ul><div class="tags"><span>SRS</span><span>Requirements</span><span>Workflow design</span><span>UAT</span></div><div class="card-foot"><span>Healthcare product</span><span>↗</span></div></article>
-        <article class="work-card reveal" data-kind="team hands-on"><div class="card-top"><span class="card-index">03 / QUALITY & SECURITY</span><span class="kind-label">Team contribution</span></div><h3>Security, remediation & release readiness</h3><p>Worked across software quality, vulnerability follow-up, technical troubleshooting and release coordination.</p><ul><li>Pen-test and OWASP ZAP findings review</li><li>Remediation coordination for 16 high-risk findings</li><li>SSL renewal / application availability incident analysis</li><li>WAF troubleshooting and release documentation</li><li>Docker and CI pipeline issue investigation</li></ul><div class="tags"><span>QA</span><span>OWASP ZAP</span><span>Release</span><span>DevOps</span></div><div class="card-foot"><span>Quality engineering</span><span>↗</span></div></article>
-        <article class="work-card reveal" data-kind="analysis team"><div class="card-top"><span class="card-index">04 / PAYMENTS & OPERATIONS</span><span class="kind-label">Requirements / analysis</span></div><h3>Payment, lease, onboarding & KYC flows</h3><p>Structured business and product workflows involving user management, payment journeys and third-party integrations.</p><ul><li>User management and lease/payment requirements</li><li>KYC process considerations and dependencies</li><li>Stripe Connect integration requirements</li><li>Banking integration dependencies, states and edge cases</li></ul><div class="tags"><span>Payments</span><span>KYC</span><span>Stripe Connect</span><span>Integrations</span></div><div class="card-foot"><span>Business process analysis</span><span>↗</span></div></article>
-        <article class="work-card reveal" data-kind="analysis proposal"><div class="card-top"><span class="card-index">05 / MOBILITY & MARKETPLACE</span><span class="kind-label">Scoping / feasibility</span></div><h3>Platform scope & marketplace journeys</h3><p>Explored product and commercial requirements for mobility and real-estate marketplace solutions.</p><ul><li>Ride-hailing platform scope and licensing breakdown</li><li>Custom-development workstream and milestone planning</li><li>Property listing and customer discovery journeys</li><li>External marketplace integration feasibility</li></ul><div class="tags"><span>Product scoping</span><span>Marketplace</span><span>Mobility</span><span>Feasibility</span></div><div class="card-foot"><span>Product definition</span><span>↗</span></div></article>
-        <article class="work-card reveal" data-kind="proposal"><div class="card-top"><span class="card-index">06 / PRODUCT EXPLORATION</span><span class="kind-label">Concepts / proposals</span></div><h3>Exploring SaaS products & opportunities</h3><p>Developed or explored product directions, business requirements and solution concepts across different domains.</p><ul><li>AI-assisted wardrobe and outfit-planning concept</li><li>Crypto administration platform concept</li><li>Background-verification SaaS concept</li><li>Real-estate SaaS and digital service propositions</li></ul><div class="tags"><span>Product discovery</span><span>SaaS</span><span>Business modelling</span><span>MVP thinking</span></div><div class="card-foot"><span>Independent product exploration</span><span>↗</span></div></article>
+        <article class="work-card reveal" data-kind="hands-on team">
+          <div class="card-top"><span class="card-icon"><svg class="ic"><use href="#i-db"/></svg></span><span class="kind-label">Technical delivery</span></div>
+          <span class="card-index">01 — Data systems</span>
+          <h3>Enterprise data integration &amp; migration</h3>
+          <p>Data movement and transformation across relational databases, NoSQL storage and cloud data services.</p>
+          <ul><li>Oracle-to-DynamoDB ingestion workflow</li><li>AWS Glue jobs consolidating DynamoDB tables</li><li>SSIS packages supporting Oracle-to-warehouse migration</li><li>SQL validation and ETL data processing</li></ul>
+          <div class="tags"><span>Oracle</span><span>DynamoDB</span><span>AWS Glue</span><span>SSIS</span><span>SQL</span></div>
+        </article>
+        <article class="work-card reveal" data-kind="team analysis">
+          <div class="card-top"><span class="card-icon"><svg class="ic"><use href="#i-pulse"/></svg></span><span class="kind-label">Analysis + QA/UAT</span></div>
+          <span class="card-index">02 — Healthcare software</span>
+          <h3>Patient &amp; clinician workflows</h3>
+          <p>Contributed to analysis, documentation and validation of healthcare application functionality and operational workflows.</p>
+          <ul><li>Patient management and doctor-portal journeys</li><li>Authentication and role/access requirements</li><li>Treatment workflow functional requirements</li><li>SRS, functional specifications and workflow testing</li></ul>
+          <div class="tags"><span>SRS</span><span>Requirements</span><span>Workflow design</span><span>UAT</span></div>
+        </article>
+        <article class="work-card reveal" data-kind="team hands-on">
+          <div class="card-top"><span class="card-icon"><svg class="ic"><use href="#i-shield"/></svg></span><span class="kind-label">Team contribution</span></div>
+          <span class="card-index">03 — Quality &amp; security</span>
+          <h3>Security, remediation &amp; release readiness</h3>
+          <p>Worked across software quality, vulnerability follow-up, technical troubleshooting and release coordination.</p>
+          <ul><li>Pen-test and OWASP ZAP findings review</li><li>Remediation coordination for 16 high-risk findings</li><li>SSL renewal / availability incident analysis</li><li>WAF troubleshooting and release documentation</li><li>Docker and CI pipeline issue investigation</li></ul>
+          <div class="tags"><span>QA</span><span>OWASP ZAP</span><span>Release</span><span>DevOps</span></div>
+        </article>
+        <article class="work-card reveal" data-kind="analysis team">
+          <div class="card-top"><span class="card-icon"><svg class="ic"><use href="#i-card"/></svg></span><span class="kind-label">Requirements / analysis</span></div>
+          <span class="card-index">04 — Payments &amp; operations</span>
+          <h3>Payment, onboarding &amp; KYC flows</h3>
+          <p>Structured business and product workflows involving user management, payment journeys and third-party integrations.</p>
+          <ul><li>User management and payment requirements</li><li>KYC process considerations and dependencies</li><li>Stripe Connect integration requirements</li><li>Banking integration dependencies, states and edge cases</li></ul>
+          <div class="tags"><span>Payments</span><span>KYC</span><span>Stripe Connect</span><span>Integrations</span></div>
+        </article>
+        <article class="work-card reveal" data-kind="analysis proposal">
+          <div class="card-top"><span class="card-icon"><svg class="ic"><use href="#i-route"/></svg></span><span class="kind-label">Scoping / feasibility</span></div>
+          <span class="card-index">05 — Mobility &amp; marketplace</span>
+          <h3>Platform scope &amp; marketplace journeys</h3>
+          <p>Explored product and commercial requirements for mobility and real-estate marketplace solutions.</p>
+          <ul><li>Ride-hailing platform scope and licensing breakdown</li><li>Custom-development workstream and milestone planning</li><li>Property listing and customer discovery journeys</li><li>External marketplace integration feasibility</li></ul>
+          <div class="tags"><span>Product scoping</span><span>Marketplace</span><span>Mobility</span><span>Feasibility</span></div>
+        </article>
+        <article class="work-card reveal" data-kind="proposal">
+          <div class="card-top"><span class="card-icon"><svg class="ic"><use href="#i-bulb"/></svg></span><span class="kind-label">Concepts / proposals</span></div>
+          <span class="card-index">06 — Product exploration</span>
+          <h3>Exploring SaaS products &amp; opportunities</h3>
+          <p>Developed or explored product directions, business requirements and solution concepts across different domains.</p>
+          <ul><li>AI-assisted wardrobe and outfit-planning concept</li><li>Crypto administration platform concept</li><li>Background-verification SaaS concept</li><li>Real-estate SaaS and digital service propositions</li></ul>
+          <div class="tags"><span>Product discovery</span><span>SaaS</span><span>Business modelling</span><span>MVP thinking</span></div>
+        </article>
       </div>
-      <p class="disclosure"><span>NOTE</span> Project and organisation names are intentionally omitted. Concepts and feasibility studies are not represented as launched products. Outcomes and ownership are described only where supported by the available project history.</p>
+      <p class="disclosure"><span>Note</span>Project and organisation names are intentionally omitted. Concepts and feasibility studies are not represented as launched products.</p>
     </section>
 
-    <section class="section approach-section" id="approach"><div class="container"><div class="section-heading reveal"><div><div class="eyebrow">HOW I WORK</div><h2>From a fuzzy problem<br>to a <span>shippable solution.</span></h2></div><p>I bring business understanding and technical context into the same conversation—so teams can make decisions with fewer assumptions.</p></div>
-      <div class="steps"><div class="step reveal"><span class="step-no">01</span><div><h3>Understand the problem</h3><p>Stakeholder conversations, business goals, user needs, current-state workflows and gap analysis.</p></div><span class="step-symbol">◎</span></div><div class="step reveal"><span class="step-no">02</span><div><h3>Define what matters</h3><p>Scope, MVP boundaries, functional requirements, user stories, acceptance criteria and priorities.</p></div><span class="step-symbol">⌘</span></div><div class="step reveal"><span class="step-no">03</span><div><h3>Align the team</h3><p>Backlog refinement, engineering clarification, dependencies, risks and change management.</p></div><span class="step-symbol">↔</span></div><div class="step reveal"><span class="step-no">04</span><div><h3>Validate delivery</h3><p>QA/UAT scenarios, business validation, release readiness and feedback loops.</p></div><span class="step-symbol">✓</span></div></div>
-    </div></section>
-
-    <section class="section container" id="toolkit"><div class="section-heading reveal"><div><div class="eyebrow">TOOLKIT</div><h2>Comfortable with the <span>details.</span></h2></div><p>Enough technical depth to work closely with engineering, data and QA teams—and enough business focus to keep the outcome in view.</p></div>
-      <div class="toolkit-grid reveal"><div class="tool-group"><span class="tool-icon">⌁</span><h3>Business & product</h3><p>Discovery · BRD / PRD / SRS · User stories · Acceptance criteria · Backlog · Process mapping · Agile</p></div><div class="tool-group"><span class="tool-icon">⌘</span><h3>Data & analytics</h3><p>SQL · Python · PySpark · Pandas · Power BI · Excel · Data validation · ETL</p></div><div class="tool-group"><span class="tool-icon">▤</span><h3>Platforms & cloud</h3><p>AWS Glue · S3 · Lambda · Redshift · Athena · DynamoDB · Spark · Databricks</p></div><div class="tool-group"><span class="tool-icon">⌕</span><h3>Quality & delivery</h3><p>QA / UAT · API workflows · JIRA · GitHub · CI/CD · Release coordination · Defect triage</p></div></div>
+    <!-- APPROACH -->
+    <section class="section approach-section" id="approach">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><div class="eyebrow">How I work</div><h2>From a fuzzy problem to a <span class="grad">shippable solution.</span></h2></div>
+          <p>I bring business understanding and technical context into the same conversation — so teams can make decisions with fewer assumptions.</p>
+        </div>
+        <div class="steps">
+          <div class="step reveal"><div class="step-node"><svg class="ic"><use href="#i-search"/></svg></div><span class="step-no">Step 01</span><h3>Understand the problem</h3><p>Stakeholder conversations, business goals, user needs, current-state workflows and gap analysis.</p></div>
+          <div class="step reveal"><div class="step-node"><svg class="ic"><use href="#i-list"/></svg></div><span class="step-no">Step 02</span><h3>Define what matters</h3><p>Scope, MVP boundaries, functional requirements, user stories, acceptance criteria and priorities.</p></div>
+          <div class="step reveal"><div class="step-node"><svg class="ic"><use href="#i-users"/></svg></div><span class="step-no">Step 03</span><h3>Align the team</h3><p>Backlog refinement, engineering clarification, dependencies, risks and change management.</p></div>
+          <div class="step reveal"><div class="step-node"><svg class="ic"><use href="#i-check"/></svg></div><span class="step-no">Step 04</span><h3>Validate delivery</h3><p>QA/UAT scenarios, business validation, release readiness and feedback loops.</p></div>
+        </div>
+      </div>
     </section>
 
-    <section class="section about-section" id="about"><div class="container about-grid"><div class="about-label reveal"><div class="eyebrow">A LITTLE ABOUT ME</div><h2>Curious by default.<br><span>Practical by design.</span></h2></div><div class="about-copy reveal"><p>I enjoy working on problems where business context, user experience and technology meet. My experience spans data systems, software workflows, requirements, quality and product exploration.</p><p>I am interested in teams that value clear thinking, thoughtful execution and people who can connect the dots between what a business needs and what a product team builds.</p><div class="availability"><span class="status-dot"></span> Open to international remote roles and relevant project engagements</div></div></div></section>
+    <!-- TOOLKIT -->
+    <section class="section container" id="toolkit">
+      <div class="section-heading reveal">
+        <div><div class="eyebrow">Toolkit</div><h2>Comfortable with the <span class="grad">details.</span></h2></div>
+        <p>Enough technical depth to work closely with engineering, data and QA teams — and enough business focus to keep the outcome in view.</p>
+      </div>
+      <div class="toolkit-grid">
+        <div class="tool-group reveal"><span class="card-icon"><svg class="ic"><use href="#i-layers"/></svg></span><h3>Business &amp; product</h3><div class="chips"><span>Discovery</span><span>BRD / PRD / SRS</span><span>User stories</span><span>Acceptance criteria</span><span>Backlog</span><span>Process mapping</span><span>Agile</span></div></div>
+        <div class="tool-group reveal"><span class="card-icon"><svg class="ic"><use href="#i-chart"/></svg></span><h3>Data &amp; analytics</h3><div class="chips"><span>SQL</span><span>Python</span><span>PySpark</span><span>Pandas</span><span>Power BI</span><span>Excel</span><span>ETL</span></div></div>
+        <div class="tool-group reveal"><span class="card-icon"><svg class="ic"><use href="#i-cloud"/></svg></span><h3>Platforms &amp; cloud</h3><div class="chips"><span>AWS Glue</span><span>S3</span><span>Lambda</span><span>Redshift</span><span>Athena</span><span>DynamoDB</span><span>Databricks</span></div></div>
+        <div class="tool-group reveal"><span class="card-icon"><svg class="ic"><use href="#i-branch"/></svg></span><h3>Quality &amp; delivery</h3><div class="chips"><span>QA / UAT</span><span>API workflows</span><span>JIRA</span><span>GitHub</span><span>CI/CD</span><span>Release coordination</span><span>Defect triage</span></div></div>
+      </div>
+    </section>
 
-    <section class="contact-section container" id="contact"><div class="contact-panel reveal"><div><div class="eyebrow">HAVE A PRODUCT CHALLENGE?</div><h2>Let's make the<br><span>next step clearer.</span></h2><p>Open to Product Analyst, Business Analyst, Product Operations and implementation-focused opportunities with global teams.</p></div><div class="contact-actions"><a class="button button-primary" id="email-link" href="mailto:muditgpt6@gmail.com">Start a conversation <span>↗</span></a><a class="button button-ghost" id="linkedin-link" href="https://www.linkedin.com/in/muddit-gupta-439340200/" target="_blank" rel="noreferrer">Connect on LinkedIn <span>↗</span></a><small>muditgpt6@gmail.com</small></div></div></section>
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-label reveal"><div class="eyebrow">A little about me</div><h2>Curious by default.<br><span class="grad">Practical by design.</span></h2></div>
+        <div class="about-copy reveal">
+          <p>I enjoy working on problems where business context, user experience and technology meet. My experience spans data systems, software workflows, requirements, quality and product exploration.</p>
+          <p>I'm interested in teams that value clear thinking, thoughtful execution and people who can connect the dots between what a business needs and what a product team builds.</p>
+          <div class="availability"><span class="status-dot"></span>Open to international remote roles and relevant project engagements</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section container" id="contact">
+      <div class="contact-panel reveal">
+        <div>
+          <div class="eyebrow">Have a product challenge?</div>
+          <h2>Let's make the <span class="grad">next step clearer.</span></h2>
+          <p>Open to Product Analyst, Business Analyst, Product Operations and implementation-focused opportunities with global teams.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" id="email-link" href="mailto:muditgpt6@gmail.com"><svg class="ic"><use href="#i-mail"/></svg> Start a conversation</a>
+          <a class="button button-ghost" id="linkedin-link" href="https://www.linkedin.com/in/muddit-gupta-439340200/" target="_blank" rel="noreferrer"><svg class="ic"><use href="#i-in"/></svg> Connect on LinkedIn</a>
+          <small>muditgpt6@gmail.com</small>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="container footer"><a class="brand" href="#top">MUDDIT<span>.</span></a><span>© <span id="year">2026</span> Muddit Gupta · Product & Business Analysis</span><a href="#top">Back to top ↑</a></footer>
+
+  <footer class="container footer">
+    <a class="brand" href="#top"><span class="brand-mark">M</span>Muddit Gupta</a>
+    <span>© <span id="year">2026</span> Muddit Gupta · Product &amp; Business Analysis</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
   <script src="/script.js"></script>
 </body>
 </html>
